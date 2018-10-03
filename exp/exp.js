@@ -132,7 +132,7 @@ var EXP = (function () {
                     { letter: "L", rt: undefined, isi: 30000 },
                     { letter: "W", rt: undefined, isi: 5000 },
                     { letter: "I", rt: undefined, isi: 30000 },
-                    { letter: "D", rt: undefined, isi: 5000 } ] },
+                    { letter: "D", rt: undefined, isi: 5000 } ] }
     ];
 
     // ***** 実験開始に先立って1回だけ実施する処理
