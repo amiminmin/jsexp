@@ -145,7 +145,7 @@ var EXP = (function () {
         var set_screen = function () {
             IO.clear(ID_MAIN);
             IO.display_instruction("【実験】",
-                                   ["画面に*が表示されたあと、しばらくしてから文字が1つ表示されます。表示されたらできるだけ早くスペースキーを押してください。一部、作業中に音が流れるブロックがあります。"], 
+                                   ["画面に+が表示されたあと、しばらくしてから文字が1つ表示されます。表示されたらできるだけ早くスペースキーを1回押してください。"], 
                                    ID_MAIN);
         };
 
@@ -217,8 +217,7 @@ var EXP = (function () {
         };
         setup();
         IO.present_stimuli_and_wait_for_key(
-            [["＊", T_FIX, ID_CENTER],
-             ["", T_BLANK, ID_CENTER],
+            [["+", T_BLANK, ID_CENTER],
              [trial.letter, block.timeout, ID_CENTER]],
             IO.KEYCODE.SPACE,
             set_reaction);
