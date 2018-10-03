@@ -172,17 +172,17 @@ var EXP = (function () {
                                 ID_MAIN, { textAlign: "center" });
             if (block.sound === NO_SOUND) {
                 msg = "準備ができたらスペースキーを押してください。"
-                audio.src = "silent.mp3"
+                audio.src = "https://amiminmin.github.io/jsexp/exp/silent.mp3"
                 audio.load();
                 audio.play();
             } else if (block.sound  === SOUND1) {
                 msg = "準備ができたらスペースキーを押してください。";
-                audio.src = "sound1.mp3"
+                audio.src = "https://amiminmin.github.io/jsexp/exp/sound1.mp3"
                 audio.load();
                 audio.play();
             } else {
                 msg = "準備ができたらスペースキーを押してください。";
-                audio.src = "sound2.mp3"
+                audio.src = "https://amiminmin.github.io/jsexp/exp/sound2.mp3"
                 audio.load();
                 audio.play();
             }
