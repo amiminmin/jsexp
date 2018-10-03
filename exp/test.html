@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>test</title>
+	<meta charset="utf-8" />
+  <script>
+    var audioElem;
+
+    function PlaySound() {
+      audioElem = new Audio();
+      audioElem.src = "sound1.mp3";
+      audioElem.play();
+    }
+    function StopSound(){
+      audioElem.pause();
+    }
+  </script>
+</head>
+<body>
+    <h3>うるさすぎず、周囲にかき消されない程度の音量に調整してください。</h3>
+    <h3>調整が終わったら、このタブを閉じて実験に進んでください。</h3>
+  <a href="javascript:void(0);" onclick="PlaySound();">再生</a><br/>
+  <a href="javascript:void(0);" onclick="StopSound();">停止</a><br />
+</body>
+</html>
