@@ -176,12 +176,12 @@ var EXP = (function () {
                 audio.load();
                 audio.play();
             } else if (block.sound  === SOUND1) {
-                msg = "準備ができたらスペースキーを押してください。";
+                msg = "音源が再生されるまで待機してください。準備ができたらスペースキーを押してください。";
                 audio.src = "https://amiminmin.github.io/jsexp/exp/sound1.mp3"
                 audio.load();
                 audio.play();
             } else {
-                msg = "準備ができたらスペースキーを押してください。";
+                msg = "音源が再生されるまで待機してください。準備ができたらスペースキーを押してください。";
                 audio.src = "https://amiminmin.github.io/jsexp/exp/sound2.mp3"
                 audio.load();
                 audio.play();
