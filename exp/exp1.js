@@ -279,7 +279,7 @@ var EXP = (function () {
         string = [id, sex].join();
         blocks.forEach(function (block) {
             var average = 0, timeout = 0;
-            string += "\n";
+            string += "\r\n";
             
 
             block.trials.forEach(function (trial) {
@@ -293,9 +293,9 @@ var EXP = (function () {
             if ((block.trials.length - timeout) > 0) {
                 average = Math.floor(average / (block.trials.length - timeout));
             }
-            string += "\n" + [average].join();
+            string += "\r\n" + [average].join();
         });
-        string += '\n' ; 
+        string += '\r\n' ; 
         IO.save_data(TITLE, "", string, ID_MAIN, "append");
     };
 
