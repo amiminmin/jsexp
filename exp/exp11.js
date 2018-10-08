@@ -6,7 +6,7 @@ DEBUG = false;
 
 var EXP = (function () {
     // ***** 必須の変数・定数
-    var TITLE = "exp";       // 結果データを保存するディレクトリ名に使われる
+    var TITLE = id;       // 結果データを保存するディレクトリ名に使われる
     var id, sex;        // 参加者情報
     var b = 0;          // 実行中のblock番号(0からblocks.length-1まで)
     var block;          // 実行中のblock
