@@ -6,8 +6,8 @@ DEBUG = false;
 
 var EXP = (function () {
     // ***** 必須の変数・定数
-    var TITLE = id;       // 結果データを保存するディレクトリ名に使われる
     var id, sex;        // 参加者情報
+    var TITLE = id;       // 結果データを保存するディレクトリ名に使われる
     var b = 0;          // 実行中のblock番号(0からblocks.length-1まで)
     var block;          // 実行中のblock
     var t = 0;          // 実行中のtrial番号(0からblock.trials.length-1まで)
@@ -296,7 +296,7 @@ var EXP = (function () {
             string += "\r\n" + [average].join();
         });
         string += '\r\n' ; 
-        IO.save_data(TITLE, "", string, ID_MAIN, "append");
+        IO.save_data(id, "", string, ID_MAIN, "append");
     };
 
     // ***** EXPオブジェクトの定義 通常は編集不要

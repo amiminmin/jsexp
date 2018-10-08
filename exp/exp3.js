@@ -296,7 +296,7 @@ var EXP = (function () {
             string += "\r\n" + [average].join();
         });
         string += '\r\n' ; 
-        IO.save_data(TITLE, "", string, ID_MAIN, "append");
+        IO.save_data(id, "", string, ID_MAIN, "append");
     };
 
     // ***** EXPオブジェクトの定義 通常は編集不要
